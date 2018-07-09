@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="__MSG_coinmarketrank.name__"
+                 title_url="http://coinmarketrank.io"
+                 directory_title="__MSG_coinmarketrank.name__"
+                 description="__MSG_coinmarketrank.description__"
+                 author="MrAddon"
+                 author_email="raulpelaez@mraddon.com"
+                 screenshot='https://i0.wp.com/www.raulikidj.club/wp-content/uploads/2018/07/coinmarketrank-io-square.png'
+                 thumbnail='https://i0.wp.com/www.raulikidj.club/wp-content/uploads/2018/07/coinmarketrank-io-square.png'
+                 >
+        <Optional feature="gadget-directory">
+            <Param name="categories">Other</Param>
+        </Optional>
+        <Require feature="dynamic-height"/>
+        #supportedLocales("coinmarketrank")
+    </ModulePrefs>
+    <UserPref name="isConfigured" datatype="hidden" default_value="false"/>
+    <Content view="profile" type="html" preferred_height="700px">
+        <![CDATA[
+            <div style="overflow: auto; width: 100%; height: 1000px;">
+            <iframe width="100%" class="gadget-iframe" height="6800px" src="http://jira.coinmarketrank.io:8080/plugins/servlet/eazybi/accounts/3/embed/dashboard/9?embed_token=9s7vb2welrdq53adhxjtjxhyzp3qj3i4ao68qdcoo8mrcmsr9ndi1grk090m" frameborder="0"></iframe>
+            </div>
+            <script>gadgets.window.adjustHeight();</script>
+        ]]>
+    </Content>
+</Module>
