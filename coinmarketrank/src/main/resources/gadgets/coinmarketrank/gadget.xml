@@ -18,9 +18,55 @@
     <UserPref name="isConfigured" datatype="hidden" default_value="false"/>
     <Content view="profile" type="html" preferred_height="700px">
         <![CDATA[
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121643333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-121643333-1');
+</script>
+                                                        <ul>
+							<li><a href="http://coinmarketrank.io/index.html" target="new">GLOBAL</a></li>
+                                                        <li><a href="http://coinmarketrank.io/top20.html" target="new">TOP20</a></li>
+                                                        <li><a href="http://coinmarketrank.io/topprice.html" target="new">PRICES</a></li>
+							<li><a href="http://coinmarketrank.io/topchange.html" target="new">TOP%</a></li>
+							<li><a href="http://coinmarketrank.io/badchange.html" target="new">BAD%</a></li>
+                                                        <li><a href="http://coinmarketrank.io/graphs.html" target="new">GRAPHS</a></li>
+                                                        <li><a href="http://coinmarketrank.io/graphs.html" target="new">ERC20</a></li>
+                                                        <li><a href="http://coinmarketrank.io/icos.html" target="new">ICOS</a></li>
+                                                        <li><a href="http://coinmarketrank.io/twitter.html" target="new">TWEETS</a></li>
+                                                        <li><a href="https://coinmarketrank.wordpress.com/" target="new">BLOG</a></li>
+                                                        </ul>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white !important;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+</style>
             <div style="overflow: auto; width: 100%; height: 1000px;">
-            <iframe width="100%" class="gadget-iframe" height="6800px" src="http://jira.coinmarketrank.io:8080/plugins/servlet/eazybi/accounts/3/embed/dashboard/9?embed_token=9s7vb2welrdq53adhxjtjxhyzp3qj3i4ao68qdcoo8mrcmsr9ndi1grk090m" frameborder="0"></iframe>
+            <iframe width="100%" id="blockchain" class="gadget-iframe" height="6800px" src="http://jira.coinmarketrank.io:8080/plugins/servlet/eazybi/accounts/3/embed/dashboard/9?embed_token=9s7vb2welrdq53adhxjtjxhyzp3qj3i4ao68qdcoo8mrcmsr9ndi1grk090m" frameborder="0"></iframe>
             </div>
+
             <script>gadgets.window.adjustHeight();</script>
         ]]>
     </Content>
